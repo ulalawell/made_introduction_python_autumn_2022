@@ -19,10 +19,11 @@ def merge(subsequence1, subsequence2):
     return merged_subsequence
 
 
-assert merge([1, 1, 2, 5, 7], (1, 1, 2, 3, 4, 7)) == ([1, 2, 7])
-assert merge([1, 3, 5], ()) == ([])
-assert merge([], (1, 3, 5)) == ([])
-assert merge([], ()) == ([])
-assert merge([1, 1, 1, 1], (1, 1, 1)) == ([1])
+if __name__ == '__main__':
+    assert merge([1, 1, 2, 5, 7], (1, 1, 2, 3, 4, 7)) == ([1, 2, 7])
+    assert merge([1, 3, 5], ()) == ([])
+    assert merge([], (1, 3, 5)) == ([])
+    assert merge([], ()) == ([])
+    assert merge([1, 1, 1, 1], (1, 1, 1)) == ([1])
 
-print('ok')
+    print('ok')

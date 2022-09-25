@@ -10,8 +10,9 @@ def find_roots(a, b, c):
     return first_root, second_root
 
 
-assert find_roots(1, 2, -3) == (1, -3)
-assert find_roots(4, 4, 1) == (-0.5, -0.5)
-assert find_roots(1, 1, 10) is None
+if __name__ == '__main__':
+    assert find_roots(1, 2, -3) == (1, -3)
+    assert find_roots(4, 4, 1) == (-0.5, -0.5)
+    assert find_roots(1, 1, 10) is None
 
-print('ok')
+    print('ok')
