@@ -38,3 +38,5 @@ if __name__ == '__main__':
 
     for _ in range(150):
         print(boo("Scott"))
+
+    print('ok')
