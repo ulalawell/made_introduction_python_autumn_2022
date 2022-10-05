@@ -7,7 +7,7 @@ def mean(k):
 
         def wrapper(*args, **kwargs):
             start_ts = time.time()
-            result = func(args[0])
+            result = func(*args, **kwargs)
             end_ts = time.time()
             statistics.append(end_ts - start_ts)
 
