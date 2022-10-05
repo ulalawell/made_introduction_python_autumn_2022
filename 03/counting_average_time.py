@@ -7,13 +7,18 @@ def mean(k):
 
         def wrapper(*args, **kwargs):
             start_ts = time.time()
-            func(args[0])
+            result = func(args[0])
             end_ts = time.time()
             statistics.append(end_ts - start_ts)
 
             if k > len(statistics):
-                return sum(statistics) / len(statistics)
-            return sum(statistics[-k:]) / k
+                print("Mean time for {} calls is {} sec.".format(
+                    k, sum(statistics) / len(statistics)))
+            else:
+                print("Mean time for {} calls is {} sec.".format(
+                    k, sum(statistics[-k:]) / k))
+
+            return result
 
         return wrapper
 
@@ -36,7 +41,7 @@ if __name__ == '__main__':
     for _ in range(15):
         print(foo("Walter"))
 
-    for _ in range(150):
+    for _ in range(20):
         print(boo("Scott"))
 
     print('ok')
