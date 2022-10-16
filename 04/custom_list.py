@@ -13,9 +13,6 @@ class CustomList(list):
     Implemented method __str__
     """
 
-    def __init__(self, data):
-        super().__init__(data)
-
     def __add__(self, other):
         first_operand, second_operand = zip(*list(itertools.zip_longest(self, other, fillvalue=0)))
         return CustomList(map(sum, zip(first_operand, second_operand)))
