@@ -1,1 +1,1 @@
-# made_introduction_python_autumn_2022
+# Made Introduction Python course
