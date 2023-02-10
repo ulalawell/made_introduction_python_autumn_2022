@@ -1,1 +1,1 @@
-# Made Introduction Python course
+# Python course
